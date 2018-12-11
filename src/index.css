@@ -12,3 +12,129 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+#content{
+  width: 70%;
+  margin: 20px auto;
+}
+
+div#movies_cont {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  width: 100%;
+}
+
+.movie {
+  width: 30%;
+  min-height: 20em;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px 2px #868686;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hoverBox {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background: #00000061;
+  color: #fff;
+  font-size: 22px;
+  flex-direction: column;
+}
+
+.movie:hover .hoverBox {
+  display: flex;
+}
+
+.title {
+  padding: 0 20px;
+}
+
+.year {
+  font-size: 0.7em;
+}
+
+.editbox {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #00000091;
+  padding: 7px 16px;
+  color: #fff;
+  border-radius: 20px 0px 0px 0px;
+}
+
+#new_movie {
+  font-size: 22px;
+  padding-left: 15px;
+  float: left;
+  width: 100%;
+}
+
+#new_movie_btn {
+  cursor: pointer;
+  float: left;
+  padding: 4px 12px;
+}
+
+div#new_movie_btn:hover {
+  background: black;
+  border-radius: 11px;
+  color: #fff;
+}
+
+.modal-header h5 {
+    left: 0;
+    text-align: center;
+    font-size: 22px;
+    position: absolute;
+    right: 0;
+}
+
+.modal-header {
+    padding-bottom: 35px;
+}
+
+.form_inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form_inputs input {
+  flex: 1;
+}
+
+.form_inputs label {
+  margin-right: 5px;
+}
+
+.editbox > div {
+  float: right;
+  padding: 0 5px;
+}
+
+.editbox > div i {
+  cursor: pointer;
+}
+
+#content > h1 {
+  text-align: center;
+}
+
+@media(max-width:768px) {
+  .movie {
+      width: 28%;            
+  }
+}
